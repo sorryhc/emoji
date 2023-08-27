@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as Copy } from '../../icon/copy.svg';
 
 export const Wrap = styled.div`
   max-width: 860px;
@@ -10,16 +11,16 @@ export const Header = styled.div`
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  padding: 100px 0 40px;
+  padding: 100px 0 30px;
   @media (max-width: 768px) {
-    padding: 40px 0 30px;
+    padding: 40px 0 20px;
   }
 `;
 
 export const Tips = styled.div`
   font-size: 14px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 `;
 
 export const Title = styled.div`
@@ -61,12 +62,40 @@ export const EmojiItem = styled.div`
   justify-content: center;
 `;
 
+export const EmojiCopy = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background: #ebf6ff;
+  border-radius: 3px;
+  display: none;
+`;
+
+export const EmojiCopySvg = styled(Copy)`
+  width: 18px;
+`;
 
 export const EmojiItemHover = styled.div`
-  padding: 5px;
+  padding: 5px 8px;
   border-radius: 3px;
   cursor: pointer;
+  position: relative;
+  user-select: none;
   &:hover {
     background: #ebf6ff;
+    ${EmojiCopy} {
+      display: flex;
+    }
+  }
+  &:active {
+    ${EmojiCopy} {
+      background: #bfd9ee;
+    }
   }
 `;

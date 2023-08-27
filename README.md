@@ -1,6 +1,6 @@
 # EMOJI
 
-Data sourced from `github`.
+`emoji` data sourced from `github set status`.
 
 ### License
 

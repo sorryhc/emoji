@@ -1,6 +1,6 @@
 # EMOJI
 
-Emojis are supported on iOS, Android, macOS, Windows, Linux and ChromeOS. `emoji` data sourced from `github set status`.
+convenient to use Emojis in your application. `emoji` data sourced from `github set status`.
 
 ### License
 

@@ -10,15 +10,9 @@
     "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
-    "saqu": "^0.1.27",
+    "saqu": "^0.1.29",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7"
-  },
-  "overrides": {
-    "@swc-node/core": "1.10.4"
-  },
-  "resolutions": {
-    "@swc-node/core": "1.10.4"
   },
   "scripts": {
     "start": "saqu start",

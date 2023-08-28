@@ -12,7 +12,7 @@ function App() {
 
   const oncopy = (emoji: string) => {
     copyTextToClipboard(emoji, (isCopy) => {
-      isCopy && toast.success('copy Successfully!')
+      isCopy && toast.success(`${emoji} copy Successfully!`)
     });
   }
 

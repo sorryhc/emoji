@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Copy } from '../../icon/copy.svg';
+import { ReactComponent as Copy } from '../../svg/copy.svg';
 
 export const Wrap = styled.div`
   max-width: 860px;
